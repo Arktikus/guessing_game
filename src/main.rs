@@ -40,7 +40,9 @@ fn exit_or_not() {
     io::stdin().read_line(&mut answer).expect("Error");
 
     if answer.trim().is_empty() {
+
         //TODO - Add check what type answer is. If not u8 then go back to exit_or_not;
+        
         clear_console();
         println!("You need to provide an answer!\n");
         exit_or_not();
